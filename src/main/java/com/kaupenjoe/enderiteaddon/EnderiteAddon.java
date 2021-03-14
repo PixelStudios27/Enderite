@@ -1,5 +1,6 @@
 package com.kaupenjoe.enderiteaddon;
 
+import com.kaupenjoe.enderiteaddon.block.ModBlocks;
 import com.kaupenjoe.enderiteaddon.item.ModItems;
 import com.kaupenjoe.enderiteaddon.util.registration;
 import net.minecraft.block.Block;
@@ -36,6 +37,7 @@ public class EnderiteAddon
         registration.register();
 
         ModItems.register();
+        ModBlocks.register();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
